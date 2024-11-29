@@ -1,5 +1,6 @@
 # 更新说明
 ## 1.0 2024-11-29
+iptables -I OUTPUT -p tcp --sport 80 -j NFQUEUE --queue-num 100
 Useage: `python3 geneva2.py -q 100 -w 1 -s 7 -c 7`
 
 1. -w: window_size
